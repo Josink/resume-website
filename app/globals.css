@@ -1,26 +1,230 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --highlight: #15D4B8;
+  --secondary-text: #DEDEDE;
+  --tertiary-text: #B8B6B6;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body{
+    @apply bg-black text-white;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /*NAV STYLING*/
+  .nav-wrapper {
+    @apply fixed top-6 left-1/2 -translate-x-1/2
+    px-8 py-3 rounded-2xl
+    backdrop-blur-md bg-white/5
+    border border-white/10
+    shadow-lg;
+  }
+
+  /* Horizontal layout */
+  .nav {
+    @apply flex gap-10 items-center;
+  }
+
+  /* Link base style */
+  .nav-link {
+    @apply relative text-white/80 cursor-pointer
+    text-sm tracking-wide transition duration-300;
+  }
+
+  /* Hover text */
+  .nav-link:hover {
+    @apply text-white;
+  }
+
+  /* Underline animation */
+  .nav-link::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 h-0.5 w-0
+    bg-(--highlight) transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .nav-link.active {
+    @apply text-white;
+  }
+
+  /*HERO STYLING*/
+  .hero{
+    @apply min-h-screen flex flex-row-reverse items-center px-10 md:px-20;
+  }
+
+  .hero-text{
+    @apply flex flex-col gap-6 max-w-xl text-right items-end;
+  }
+
+  .hero-greeting{
+    @apply text-5xl md:text-7xl font-semibold text-white leading-tight;
+  }
+
+  .hero-visual{
+    @apply flex-1 flex justify-center items-center;
+  }
+
+  .gradient-blob {
+    @apply w-100 h-100 rounded-full blur-3xl;
+    background: radial-gradient(circle, var(--highlight), transparent 70%);
+  }
+
+  .about{
+    @apply min-h-screen flex justify-center items-end gap-16 px-10 md:px-20;
+  }
+
+  .personal-info{
+    @apply mb-75 max-w-4xl w-full py-6 px-6 rounded-2xl border border-white/10;
+  }
+
+  .personal-info-intro{
+    @apply font-medium text-lg leading-relaxed ;
+  }
+
+  .personal-info-text{
+    @apply text-(--secondary-text);
+  }
+
+  .personal-info-text p{
+    @apply mb-3 mt-3;
+  }
+
+  .education{
+    @apply mb-75 max-w-2xl w-full px-8 py-6
+    rounded-2xl border border-white/10 shadow-lg;
+  }
+
+  .details{
+    @apply flex justify-between items-center w-full;
+  }
+
+  .education-title{
+    @apply font-semibold text-xl;
+  }
+
+  .edu{
+    @apply px-8 py-3;
+  }
+
+  .school{
+    @apply font-semibold;
+  }
+
+  .description{
+    @apply text-(--secondary-text) whitespace-pre-line;
+  }
+
+  .time{
+    @apply text-(--tertiary-text);
+  }
+
+  .page-container{
+    @apply flex flex-col gap-24 px-6 md:px-17 py-10;
+  }
+
+  .experience{
+    @apply flex flex-col gap-8;
+  }
+
+  .experience-title {
+    @apply text-3xl font-semibold;
+  }
+
+  .card {
+    @apply rounded-2xl border border-white/10 shadow-lg
+    mt-6 px-8 py-6;
+  }
+
+  .card-title {
+    @apply text-xl font-bold;
+  }
+
+  .location{
+    @apply font-semibold;
+  }
+
+  .projects-title{
+    @apply text-3xl font-semibold mb-6;
+  }
+
+  .projects-layout{
+    @apply grid grid-cols-1 md:grid-cols-4 auto-rows-[200px] gap-4;
+  }
+
+  .project{
+    @apply relative overflow-hidden rounded-2xl cursor-pointer;
+  }
+
+  .project-image{
+    @apply w-full h-full object-cover transition duration-500;
+  }
+
+  .project:hover .project-image{
+    @apply scale-110;
+  }
+
+  .project-overlay{
+    @apply absolute inset-0 bg-black/70 text-white p-4
+    flex flex-col justify-end opacity-0 transition duration-300;
+  }
+
+  .project:hover .project-overlay{
+    @apply opacity-100;
+  }
+
+  .card-title{
+    @apply text-lg font-bold;
+  }
+
+  .project-description{
+    @apply line-clamp-3;
+  }
+
+  .project-0{
+    @apply md:col-span-2 md:row-span-2;
+  }
+
+  .project-1 {
+    @apply md:col-span-1 md:row-span-1;
+  }
+
+  .project-2 {
+    @apply md:col-span-1 md:row-span-1;
+  }
+
+  .project-3 {
+    @apply md:col-span-2 md:row-span-2;
+  }
+
+  .project-4 {
+    @apply md:col-span-1 md:row-span-1;
+  }
+
+  .project-5 {
+    @apply md:col-span-1 md:row-span-1;
+  }
+
+  .contact-title{
+    @apply text-3xl font-semibold mb-6;
+  }
+
+  .contact-spiel{
+    @apply text-(--secondary-text);
+  }
 }
