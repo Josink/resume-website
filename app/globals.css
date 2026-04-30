@@ -225,6 +225,22 @@
   }
 
   .contact-spiel{
-    @apply text-(--secondary-text);
+    @apply text-(--tertiary-text);
+  }
+
+  .contact-link{
+    @apply flex items-center gap-3 mt-3 text-(--secondary-text);
+  }
+
+  .contact-link a{
+    @apply transition duration-200;
+  }
+
+  .contact-link a:hover{
+    @apply opacity-70;
+  }
+
+  .contact-icon{
+    @apply w-5 h-5;
   }
 }
