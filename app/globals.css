@@ -25,7 +25,7 @@
     px-8 py-3 rounded-2xl
     backdrop-blur-md bg-white/5
     border border-white/10
-    shadow-lg;
+    shadow-lg flex flex-1;
   }
 
   /* Horizontal layout */
@@ -36,12 +36,7 @@
   /* Link base style */
   .nav-link {
     @apply relative text-white/80 cursor-pointer
-    text-sm tracking-wide transition duration-300;
-  }
-
-  /* Hover text */
-  .nav-link:hover {
-    @apply text-white;
+    text-sm tracking-wide transition duration-300 hover:text-white;
   }
 
   /* Underline animation */
@@ -229,18 +224,26 @@
   }
 
   .contact-link{
-    @apply flex items-center gap-3 mt-3 text-(--secondary-text);
+    @apply flex items-center gap-3 mt-3 text-(--higlight);
   }
 
   .contact-link a{
-    @apply transition duration-200;
-  }
-
-  .contact-link a:hover{
-    @apply opacity-70;
+    @apply transition duration-200 hover:text-(--highlight);
   }
 
   .contact-icon{
     @apply w-5 h-5;
+  }
+
+  .projects{
+    @apply flex flex-col m-20 gap-20;
+  }
+
+  .projects-links{
+    @apply flex flex-row gap-10 justify-center;
+  }
+
+  .projects-links a{
+    @apply text-(--secondary-text) hover:text-(--highlight) transition duration-200;
   }
 }

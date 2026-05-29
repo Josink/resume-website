@@ -1,7 +1,10 @@
 "use client";
 import React, {useEffect, useState} from "react";
+import {usePathname} from "next/navigation";
 
 export default function NavBar() {
+    const pathname = usePathname();
+
     const links = [
         {id: "home", label: "Home"},
         {id: "about", label: "About"},
@@ -28,6 +31,8 @@ export default function NavBar() {
         sections.forEach((section) => observer.observe(section));
         return () => observer.disconnect();
     }, []);
+
+
 
     return (
         <nav className = "nav-wrapper">

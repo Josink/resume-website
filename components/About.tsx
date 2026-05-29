@@ -21,7 +21,7 @@ export default function Education() {
                     adaptable and self-motivated and look forward to roles that allow me to show-case creativity.
                     I&#39;m currently looking for internship/co-op roles in any computer-science related fields,
                     especially any that lie in UI and Web
-                    development/design and video game programming.
+                    development/design or Game developement.
                 </h1>
 
                 <h3 className = "personal-info-text">
