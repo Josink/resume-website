@@ -16,7 +16,7 @@ export default function Education() {
         <section id = "about" className = "about">
             <div className = "personal-info">
                 <h1 className = "personal-info-intro">
-                    I&#39;m a college student at Kettering University majoring in Computer Science with
+                    I&#39;m a college student attending Kettering University with a major in Computer Science,
                     a concentration in Computer Gaming, and minoring in Computer Engineering. I&#39;m highly
                     adaptable and self-motivated and look forward to roles that allow me to show-case creativity.
                     I&#39;m currently looking for internship/co-op roles in any computer-science related fields,

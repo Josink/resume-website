@@ -235,7 +235,7 @@
     @apply w-5 h-5;
   }
 
-  .projects{
+  .project-page{
     @apply flex flex-col m-20 gap-20;
   }
 

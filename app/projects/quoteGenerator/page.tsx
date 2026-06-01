@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function quoteGenerator(){
     return(
-        <section id = "projects" className = "projects">
+        <section id = "project-page" className = "projects">
             <Image
                 src="/project-thumbnails/siken-quote-generator-thumbnail.png"
                 alt="Image of the Richard Siken Quote Generator Website"

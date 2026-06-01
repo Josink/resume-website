@@ -3,7 +3,7 @@ import {JSX} from "react";
 
 export default function algorithmsWebsite(): JSX.Element {
     return(
-        <section id = "projects" className = "projects">
+        <section id = "project-page" className = "projects">
             <Image
                 src="/project-thumbnails/algorithms-website-thumbnail.png"
                 alt="A web application landing page titled “ALGORITHMS” with a clean blue-and-white interface. A top navigation bar shows links such as GitHub, Algorithms, a Dashboard button, and a Log out button. The main content area introduces the site as a tool for generating and sorting integers using computer science algorithms, with references to a CS 203 course at Kettering University. Below the header are feature sections with icons describing how the system works, search algorithms, sorting algorithms, and performance analysis."

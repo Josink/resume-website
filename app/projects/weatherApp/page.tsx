@@ -3,7 +3,7 @@ import {JSX} from "react";
 
 export default function weatherApp(): JSX.Element {
     return(
-        <section id = "projects" className = "projects">
+        <section id = "project-page" className = "projects">
             <Image
                 src="/project-thumbnails/weather-app-thumbnail.png"
                 alt="Image of the Richard Siken Quote Generator Website"
