@@ -81,7 +81,7 @@
   }
 
   .about{
-    @apply min-h-screen flex flex-col sm:flex-row justify-center sm:items-end gap-16 px-10 py-10 md:px-20;
+    @apply min-h-screen flex flex-col sm:flex-row justify-center sm:items-end gap-16 md:px-20;
   }
 
   .personal-info{
