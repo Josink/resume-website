@@ -8,7 +8,7 @@ export default function frcCode() {
                 alt="Image of the Richard Siken Quote Generator Website"
                 width = {1000}
                 height = {1000}
-                className = "project-image"
+                className = "projects-image"
             />
 
             <div className="projects-description">

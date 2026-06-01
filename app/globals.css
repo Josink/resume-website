@@ -81,7 +81,7 @@
   }
 
   .about{
-    @apply min-h-screen flex justify-center items-end gap-16 px-10 md:px-20;
+    @apply min-h-screen flex flex-col sm:flex-row justify-center sm:items-end gap-16 px-10 py-10 md:px-20;
   }
 
   .personal-info{
@@ -89,7 +89,7 @@
   }
 
   .personal-info-intro{
-    @apply font-medium text-lg leading-relaxed ;
+    @apply font-medium text-lg leading-relaxed;
   }
 
   .personal-info-text{
@@ -237,6 +237,10 @@
 
   .projects{
     @apply flex flex-col m-20 gap-20;
+  }
+
+  .projects-image{
+    @apply w-3/4 h-1/2 justify-center items-center rounded-full border border-white/10;
   }
 
   .projects-links{
