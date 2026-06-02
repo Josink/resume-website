@@ -235,12 +235,16 @@
   }
 
   .project-page{
-    @apply flex flex-col m-20 gap-20;
+    @apply min-h-screen min-w-screen flex flex-col items-center p-20 gap-20;
   }
 
   .projects-image{
-    @apply w-3/4 h-1/2 justify-center items-center rounded-full border border-white/10;
+    @apply h-3/5 w-auto;
   }
+
+    .projects-description {
+        @apply px-40 text-lg;
+    }
 
   .projects-links{
     @apply flex flex-row gap-10 justify-center;

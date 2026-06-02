@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function frcCode() {
     return(
-        <section id = "project-page" className = "projects">
+        <section id = "project-page" className = "project-page">
             <Image
                 src="/project-thumbnails/frc-2025-code-thumbnail.png"
                 alt="Image of the Richard Siken Quote Generator Website"
-                width = {1000}
-                height = {1000}
+                width = {500}
+                height = {500}
                 className = "projects-image"
             />
 
