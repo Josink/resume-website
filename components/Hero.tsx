@@ -1,13 +1,27 @@
 export default function Hero() {
     return (
-        <div className="gradient-bg">
+        <section id = "home" className = "hero">
 
-            <div className="gradients-container">
+            <div className="gradient-bg">
 
-                <div className="g1"></div>
+                <div className="gradients-container">
+
+                    <div className="g1"></div>
+
+                </div>
 
             </div>
 
-        </div>
+
+            {/*<div className= "hero-text">*/}
+            {/*    <h1 className = "hero-greeting">*/}
+            {/*        Hello, <br /> I&#39;m Jay*/}
+            {/*    </h1>*/}
+            {/*</div>*/}
+
+            {/*<div className = "hero-visual">*/}
+            {/*    <div className = "gradient-blob"></div>*/}
+            {/*</div>*/}
+        </section>
 );
 }

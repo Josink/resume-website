@@ -65,8 +65,12 @@
     @apply text-white;
   }
 
+  .hero{
+    @apply relative min-h-screen w-screen overflow-hidden;
+  }
+
   .gradient-bg{
-    @apply min-h-screen w-screen absolute overflow-hidden bg-linear-to-r from-highlight to-highlight2;
+    @apply absolute inset-0 w-full h-full overflow-hidden bg-linear-to-r from-highlight to-highlight2;
   }
 
   svg{
