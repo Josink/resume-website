@@ -217,7 +217,7 @@
   }
 
   .contact-link{
-    @apply flex items-center gap-3 mt-3 text-highlight;
+    @apply flex items-center gap-3 mt-3 text-secondary-text;
   }
 
   .contact-link a{
@@ -245,7 +245,7 @@
   }
 
   .projects-link{
-    @apply text-xl transition duration-300 ease-in-out;
+    @apply flex flex-row justify-center gap-3;
   }
 
   .projects-description {
@@ -253,6 +253,6 @@
   }
 
   .projects-links a{
-    @apply text-secondary-text hover:text-highlight transition duration-200;
+    @apply text-lg text-secondary-text hover:text-highlight transition duration-200;
   }
 }

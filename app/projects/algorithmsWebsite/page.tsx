@@ -15,6 +15,7 @@ export default function algorithmsWebsite() {
                 </a>
 
                 <div className="projects-links">
+                    <Image src= "/Icons/github.svg" alt="GitHub" className="contact-icon" />
                     <a href = "https://github.com/Josink/Sinkaiye-CS203-F25-G6-Project2-Website/blob/master/views/dashboard.ejs" target="_blank">GitHub</a>
                 </div>
             </div>
