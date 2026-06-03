@@ -15,6 +15,7 @@ export default function breakoutGame() {
                 </a>
 
                 <div className="projects-links">
+                    <Image src= "/Icons/github.svg" alt="GitHub" className="contact-icon" width = {500} height = {500}/>
                     <a href = "https://github.com/Josink/BreakAwayGame" target="_blank">GitHub</a>
                 </div>
             </div>

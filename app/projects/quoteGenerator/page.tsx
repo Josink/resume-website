@@ -15,6 +15,7 @@ export default function quoteGenerator(){
                 </a>
 
                 <div className="projects-links">
+                    <Image src= "/Icons/github.svg" alt="GitHub" className="contact-icon" width = {500} height = {500}/>
                     <a href = "https://github.com/Josink/richard-siken-quote-generator" target="_blank">GitHub</a>
                 </div>
             </div>

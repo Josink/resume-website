@@ -15,6 +15,7 @@ export default function waterdropGame() {
                 </a>
 
                 <div className="projects-links">
+                    <Image src= "/Icons/github.svg" alt="GitHub" className="contact-icon" width = {500} height = {500}/>
                     <a href = "https://github.com/Josink/Drop" target="_blank">GitHub</a>
                 </div>
             </div>
