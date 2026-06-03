@@ -6,12 +6,12 @@
   --color-highlight2: #5815D4;
   --color-secondary-text: #DEDEDE;
   --color-tertiary-text: #B8B6B6;
-  --color-color1: #D41532;
-  --color-color2: #91D415;
-  --color-color3: #D41591;
-  --color-color4: #D45815;
-  --color-color5: #B715D4;
-  --circle-seize: 80%;
+  --color-color1: 212 21 50;
+  --color-color2: 145 212 21;
+  --color-color3: 212 21 145;
+  --color-color4: 212 88 21;
+  --color-color5: 183 21 212;
+  --circle-size: 80%;
   --blending: hard-light;
 }
 
@@ -65,12 +65,29 @@
     @apply text-white;
   }
 
-  .hero{
-    @apply absolute inset-0 bg-linear-to-r from-highlight to-highlight2;
+  .gradient-bg{
+    @apply min-h-screen w-screen absolute overflow-hidden bg-linear-to-r from-highlight to-highlight2;
   }
 
-  .gradient-bg{
-    @apply min-h-screen overflow-hidden bg-linear-to-r from-highlight to-highlight2;
+  svg{
+    @apply hidden;
+  }
+
+  .gradients-container{
+    @apply relative w-screen h-screen;
+  }
+
+  .g1{
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color-color1), 0.8) 0, rgba(var(--color-color1),0) 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - (var(--circle-size) / 2));
+    left: calc(50% - (var(--circle-size) / 2));
+
+    opacity: 1;
   }
 
   .about{
