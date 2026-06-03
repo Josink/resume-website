@@ -1,16 +1,23 @@
 import Image from "next/image";
-import {JSX} from "react";
 
-export default function weatherApp(): JSX.Element {
+export default function weatherApp() {
     return(
         <section id = "project-page" className = "project-page">
-            <Image
-                src="/project-thumbnails/weather-app-thumbnail.png"
-                alt="Image of the Richard Siken Quote Generator Website"
-                width = {500}
-                height = {500}
-                className = "projects-image"
-            />
+            <div className = "deliverable">
+                <a href="https://jaycityweather.netlify.app/" target="_blank">
+                    <Image
+                        src="/project-thumbnails/weather-app-thumbnail.png"
+                        alt="Image of the Richard Siken Quote Generator Website"
+                        width = {500}
+                        height = {500}
+                        className = "projects-image"
+                    />
+                </a>
+
+                <div className="projects-links">
+                    <a href = "https://github.com/Josink/WeatherApp" target="_blank">GitHub</a>
+                </div>
+            </div>
 
             <div className="projects-description">
                 <p>
@@ -18,10 +25,6 @@ export default function weatherApp(): JSX.Element {
                 </p>
             </div>
 
-            <div className="projects-links">
-                <a href = "https://github.com/Josink/WeatherApp">GitHub</a>
-                <a href= "https://jaycityweather.netlify.app/">Weather App</a>
-            </div>
         </section>
     );
 }

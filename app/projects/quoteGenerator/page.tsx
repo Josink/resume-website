@@ -3,13 +3,21 @@ import Image from "next/image";
 export default function quoteGenerator(){
     return(
         <section id = "project-page" className = "project-page">
-            <Image
-                src="/project-thumbnails/siken-quote-generator-thumbnail.png"
-                alt="Image of the Richard Siken Quote Generator Website"
-                width = {500}
-                height = {500}
-                className = "projects-image"
-            />
+            <div className = "deliverable">
+                <a href="https://richard-siken-quote-generator.vercel.app/" target="_blank">
+                    <Image
+                        src="/project-thumbnails/siken-quote-generator-thumbnail.png"
+                        alt="Image of the Richard Siken Quote Generator Website"
+                        width = {500}
+                        height = {500}
+                        className = "projects-image"
+                    />
+                </a>
+
+                <div className="projects-links">
+                    <a href = "https://github.com/Josink/richard-siken-quote-generator" target="_blank">GitHub</a>
+                </div>
+            </div>
 
             <div className="projects-description">
                 <p>
@@ -23,10 +31,6 @@ export default function quoteGenerator(){
                 </p>
             </div>
 
-            <div className="projects-links">
-                <a href = "https://github.com/Josink/richard-siken-quote-generator">GitHub</a>
-                <a href= "https://richard-siken-quote-generator.vercel.app/">Richard Siken Quote Generator</a>
-            </div>
         </section>
     );
 }

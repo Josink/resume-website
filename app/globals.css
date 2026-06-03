@@ -1,10 +1,18 @@
 @import "tailwindcss";
 
-:root {
-  --background: #000000;
-  --highlight: #15D4B8;
-  --secondary-text: #DEDEDE;
-  --tertiary-text: #B8B6B6;
+@theme{
+  --color-background: #000000;
+  --color-highlight: #15D4B8;
+  --color-highlight2: #5815D4;
+  --color-secondary-text: #DEDEDE;
+  --color-tertiary-text: #B8B6B6;
+  --color-color1: #D41532;
+  --color-color2: #91D415;
+  --color-color3: #D41591;
+  --color-color4: #D45815;
+  --color-color5: #B715D4;
+  --circle-seize: 80%;
+  --blending: hard-light;
 }
 
 @layer base {
@@ -42,7 +50,7 @@
   .nav-link::after {
     content: "";
     @apply absolute left-0 -bottom-1 h-0.5 w-0
-    bg-(--highlight) transition-all duration-300;
+    bg-highlight transition-all duration-300;
   }
 
   .nav-link:hover::after {
@@ -57,26 +65,12 @@
     @apply text-white;
   }
 
-  /*HERO STYLING*/
   .hero{
-    @apply min-h-screen flex flex-row-reverse items-center px-10 md:px-20;
+    @apply min-h-screen;
   }
 
-  .hero-text{
-    @apply flex flex-col gap-6 max-w-xl text-right items-end;
-  }
-
-  .hero-greeting{
-    @apply text-5xl md:text-7xl font-semibold text-white leading-tight;
-  }
-
-  .hero-visual{
-    @apply flex-1 flex justify-center items-center;
-  }
-
-  .gradient-blob {
-    @apply w-100 h-100 rounded-full blur-3xl;
-    background: radial-gradient(circle, var(--highlight), transparent 70%);
+  .gradient-bg{
+    @apply min-h-screen overflow-hidden bg-linear-to-r from-highlight to-highlight2;
   }
 
   .about{
@@ -92,7 +86,7 @@
   }
 
   .personal-info-text{
-    @apply text-(--secondary-text);
+    @apply text-secondary-text;
   }
 
   .personal-info-text p{
@@ -121,11 +115,11 @@
   }
 
   .description{
-    @apply text-(--secondary-text) whitespace-pre-line;
+    @apply text-secondary-text whitespace-pre-line;
   }
 
   .time{
-    @apply text-(--tertiary-text);
+    @apply text-tertiary-text;
   }
 
   .page-container{
@@ -219,15 +213,15 @@
   }
 
   .contact-spiel{
-    @apply text-(--tertiary-text);
+    @apply text-tertiary-text;
   }
 
   .contact-link{
-    @apply flex items-center gap-3 mt-3 text-(--higlight);
+    @apply flex items-center gap-3 mt-3 text-highlight;
   }
 
   .contact-link a{
-    @apply transition duration-200 hover:text-(--highlight);
+    @apply transition duration-200 hover:text-highlight;
   }
 
   .contact-icon{
@@ -235,22 +229,30 @@
   }
 
   .project-page{
-    @apply min-h-screen min-w-screen flex flex-col items-center p-20 gap-20;
+    @apply min-h-screen min-w-screen flex flex-col sm:flex-row items-center p-20 gap-20;
+  }
+
+  .deliverable{
+    @apply flex flex-col gap-20 justify-center items-center w-3/4;
   }
 
   .projects-image{
-    @apply h-3/5 w-auto;
+    @apply h-4/5 w-auto hover:scale-110 transition-transform duration-300 ease-in-out rounded-md;
   }
 
-    .projects-description {
-        @apply px-40 text-lg;
-    }
+  .projects-image:hover {
+    @apply scale-110;
+  }
 
-  .projects-links{
-    @apply flex flex-row gap-10 justify-center;
+  .projects-link{
+    @apply text-xl transition duration-300 ease-in-out;
+  }
+
+  .projects-description {
+    @apply text-lg w-3/4 sm:w-1/4;
   }
 
   .projects-links a{
-    @apply text-(--secondary-text) hover:text-(--highlight) transition duration-200;
+    @apply text-secondary-text hover:text-highlight transition duration-200;
   }
 }
