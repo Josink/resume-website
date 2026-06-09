@@ -2,22 +2,75 @@
 
 @theme{
   --color-background: #000000;
-  --color-highlight: #15D4B8;
-  --color-highlight2: #5815D4;
+  --color-highlight: #D4B715;
+  --color-b-gradient1: #15D4B8;
+  --color-b-gradient2: #5815D4;
   --color-secondary-text: #DEDEDE;
   --color-tertiary-text: #B8B6B6;
-  --color-color1: 212 21 50;
-  --color-color2: 145 212 21;
-  --color-color3: 212 21 145;
-  --color-color4: 212 88 21;
-  --color-color5: 183 21 212;
+
+  --color-light-background: #FFFFFF;
+  --color-light-secondary-text: #8c8c8c;
+  --color-light-tertiary-text: #000000;
+
+
+    --color-color1: rgb(212, 21, 50);
+    --color-color2: rgb(145, 212, 21);
+    --color-color3: rgb(212, 21, 145);
+    --color-color4: rgb(212, 88, 21);
+    --color-color5: rgb(183, 21, 212);
+    --color-interactive: rgb(212, 183, 21);
+}
+
+:root {
+  --color1: 212, 21, 50;
+  --color2: 145, 212, 21;
+  --color3: 212, 21, 145;
+  --color4: 212, 88, 21;
+  --color5: 183, 21, 212;
   --circle-size: 80%;
+  --interactive: 212, 183, 21;
   --blending: hard-light;
+}
+
+@keyframes moveInCircle {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0%{
+    transform: translateY(-50%);
+  }
+  50%{
+    transform: translateY(50%);
+  }
+  100%{
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0%{
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50%{
+    transform: translateX(50%) translateY(10%);
+  }
+  100%{
+    transform: translateX(-50%) translateY(-10%);
+  }
 }
 
 @layer base {
   body{
-    @apply bg-black text-white;
+    @apply bg-light-background dark:bg-background text-white w-full h-full;
   }
 }
 
@@ -27,7 +80,6 @@
     scroll-behavior: smooth;
   }
 
-  /*NAV STYLING*/
   .nav-wrapper {
     @apply fixed top-6 left-1/2 -translate-x-1/2 w-fit z-50
     px-8 py-3 rounded-2xl
@@ -35,18 +87,19 @@
     border border-white/10 shadow-lg;
   }
 
-  /* Horizontal layout */
   .nav {
     @apply flex gap-10 items-center;
   }
 
-  /* Link base style */
   .nav-link {
-    @apply relative text-white/80 cursor-pointer
-    text-sm tracking-wide transition duration-300 hover:text-white;
+    @apply relative text-black/80 dark:text-white/80 cursor-pointer
+    text-sm tracking-wide transition duration-300;
   }
 
-  /* Underline animation */
+  .nav-link{
+    @apply text-black dark:text-white;
+  }
+
   .nav-link::after {
     content: "";
     @apply absolute left-0 -bottom-1 h-0.5 w-0
@@ -66,11 +119,15 @@
   }
 
   .hero{
-    @apply relative min-h-screen w-screen overflow-hidden;
+    @apply relative min-h-screen w-full overflow-hidden flex items-center justify-center;
+  }
+
+  .hero-text{
+    @apply relative flex flex-col gap-6 text-center font-semibold text-5xl items-end z-20;
   }
 
   .gradient-bg{
-    @apply absolute inset-0 w-full h-full overflow-hidden bg-linear-to-r from-highlight to-highlight2;
+      @apply absolute inset-0 w-full h-full overflow-hidden bg-linear-to-r from-b-gradient1 to-b-gradient2 z-0;
   }
 
   svg{
@@ -78,20 +135,130 @@
   }
 
   .gradients-container{
-    @apply relative w-screen h-screen;
+    @apply relative w-full h-full z-10;
+      filter: url(#goo) blur(40px);
   }
 
-  .g1{
+  .g1 {
+       position: absolute;
+       background: radial-gradient(
+               circle at center,
+               rgba(var(--color1), 0.8) 0,
+               rgba(var(--color1),0) 50%
+       ) no-repeat;
+
+       width: var(--circle-size);
+       height: var(--circle-size);
+
+       top: calc(50% - (var(--circle-size) / 2));
+       left: calc(50% - (var(--circle-size) / 2));
+
+       mix-blend-mode: var(--blending);
+       opacity: 1;
+
+    transform-origin: center center;
+    animation: moveVertical 30s ease infinite;
+  }
+
+  .g2 {
     position: absolute;
-    background: radial-gradient(circle at center, rgba(var(--color-color1), 0.8) 0, rgba(var(--color-color1),0) 50%) no-repeat;
-    mix-blend-mode: var(--blending);
+    background: radial-gradient(
+            circle at center,
+            rgba(var(--color2), 0.8) 0,
+            rgba(var(--color2),0) 50%
+    ) no-repeat;
 
     width: var(--circle-size);
     height: var(--circle-size);
+
     top: calc(50% - (var(--circle-size) / 2));
     left: calc(50% - (var(--circle-size) / 2));
 
+    mix-blend-mode: var(--blending);
     opacity: 1;
+
+    transform-origin: calc(50% - 400px);
+    animation: moveInCircle 20s reverse infinite;
+  }
+
+  .g3 {
+    position: absolute;
+    background: radial-gradient(
+            circle at center,
+            rgba(var(--color3), 0.8) 0,
+            rgba(var(--color3),0) 50%
+    ) no-repeat;
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+
+    top: calc(50% - (var(--circle-size) / 2 - 200px));
+    left: calc(50% - (var(--circle-size) / 2 + 500px));
+
+    mix-blend-mode: var(--blending);
+    opacity: 1;
+
+    transform-origin: calc(50% + 400px);
+    animation: moveInCircle 40s linear infinite;
+  }
+
+  .g4 {
+    position: absolute;
+    background: radial-gradient(
+            circle at center,
+            rgba(var(--color4), 0.8) 0,
+            rgba(var(--color4),0) 50%
+    ) no-repeat;
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+
+    top: calc(50% - (var(--circle-size) / 2));
+    left: calc(50% - (var(--circle-size) / 2));
+
+    mix-blend-mode: var(--blending);
+    opacity: 1;
+
+    transform-origin: calc(50% - 200px);
+    animation: moveHorizontal 40s ease infinite;
+  }
+
+  .g5 {
+    position: absolute;
+    background: radial-gradient(
+            circle at center,
+            rgba(var(--color5), 0.8) 0,
+            rgba(var(--color5),0) 50%
+    ) no-repeat;
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+
+    top: calc(50% - (var(--circle-size) / 2));
+    left: calc(50% - (var(--circle-size) / 2));
+
+    mix-blend-mode: var(--blending);
+    opacity: 1;
+
+    transform-origin: calc(50% - 800px) calc(50% + 200px);
+    animation: moveInCircle 20s ease infinite;
+  }
+
+  .interactive{
+    position: absolute;
+    background: radial-gradient(
+            circle at center,
+            rgba(var(--interactive), 0.8) 0,
+            rgba(var(--interactive),0) 50%
+    ) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: -50%;
+
+    opacity: 0.7;
   }
 
   .about{
@@ -103,11 +270,11 @@
   }
 
   .personal-info-intro{
-    @apply font-medium text-lg leading-relaxed;
+    @apply font-medium text-lg leading-relaxed text-black dark:text-white;
   }
 
   .personal-info-text{
-    @apply text-secondary-text;
+    @apply text-light-secondary-text dark:text-secondary-text;
   }
 
   .personal-info-text p{
@@ -124,7 +291,7 @@
   }
 
   .education-title{
-    @apply font-semibold text-xl;
+    @apply font-semibold text-xl text-black dark:text-white;
   }
 
   .edu{
@@ -136,11 +303,11 @@
   }
 
   .description{
-    @apply text-secondary-text whitespace-pre-line;
+    @apply text-light-secondary-text dark:text-secondary-text whitespace-pre-line;
   }
 
   .time{
-    @apply text-tertiary-text;
+    @apply text-light-tertiary-text dark:text-tertiary-text;
   }
 
   .page-container{
@@ -148,11 +315,11 @@
   }
 
   .experience{
-    @apply flex flex-col gap-8;
+    @apply flex flex-col gap-8 px-10;
   }
 
   .experience-title {
-    @apply text-3xl font-semibold;
+    @apply text-3xl font-semibold text-black dark:text-white;
   }
 
   .card {
@@ -161,7 +328,7 @@
   }
 
   .card-title {
-    @apply text-xl font-bold;
+    @apply text-xl font-bold text-black dark:text-white;
   }
 
   .location{
@@ -169,7 +336,11 @@
   }
 
   .projects-title{
-    @apply text-3xl font-semibold mb-6;
+    @apply text-3xl font-semibold mb-6 text-black dark:text-white;
+  }
+
+  .projects {
+    @apply px-10;
   }
 
   .projects-layout{
@@ -229,16 +400,20 @@
     @apply md:col-span-1 md:row-span-1;
   }
 
+    .contact{
+        @apply px-10;
+    }
+
   .contact-title{
-    @apply text-3xl font-semibold mb-6;
+    @apply text-3xl font-semibold mb-6 text-black dark:text-white;
   }
 
   .contact-spiel{
-    @apply text-tertiary-text;
+    @apply text-light-tertiary-text dark:text-tertiary-text;
   }
 
   .contact-link{
-    @apply flex items-center gap-3 mt-3 text-secondary-text;
+    @apply flex items-center gap-3 mt-3 text-light-secondary-text dark:text-secondary-text;
   }
 
   .contact-link a{
@@ -274,6 +449,6 @@
   }
 
   .projects-links a{
-    @apply text-lg text-secondary-text hover:text-highlight transition duration-200;
+    @apply text-lg text-light-secondary-text dark:text-secondary-text hover:text-highlight transition duration-200;
   }
 }

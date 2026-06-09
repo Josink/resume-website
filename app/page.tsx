@@ -40,7 +40,7 @@ export default function Home() {
     }, []);
 
   return (
-      <main className = "flex flex-col gap-24 px-6 md:px-16 py-10">
+      <main className = "flex flex-col gap-24">
         <Hero />
         <About />
         <Experience />
