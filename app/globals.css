@@ -5,6 +5,8 @@
   --color-highlight: #D4B715;
   --color-b-gradient1: #15D4B8;
   --color-b-gradient2: #5815D4;
+  --color-bd-gradient1: #0B6B5C;
+  --color-bd-gradient2: #2C0B6B;
   --color-secondary-text: #DEDEDE;
   --color-tertiary-text: #B8B6B6;
 
@@ -12,13 +14,19 @@
   --color-light-secondary-text: #8c8c8c;
   --color-light-tertiary-text: #000000;
 
+  --color-color1: rgb(212, 21, 50);
+  --color-color2: rgb(145, 212, 21);
+  --color-color3: rgb(212, 21, 145);
+  --color-color4: rgb(212, 88, 21);
+  --color-color5: rgb(183, 21, 212);
+  --color-interactive: rgb(212, 183, 21);
 
-    --color-color1: rgb(212, 21, 50);
-    --color-color2: rgb(145, 212, 21);
-    --color-color3: rgb(212, 21, 145);
-    --color-color4: rgb(212, 88, 21);
-    --color-color5: rgb(183, 21, 212);
-    --color-interactive: rgb(212, 183, 21);
+  --color-dcolor1: rgb(107 11 25);
+  --color-dcolor2: rgb(73 107 11);
+  --color-dcolor3: rgb(107 11 73);
+  --color-dcolor4: rgb(107 44 11);
+  --color-dcolor5: rgb(92 11 107);
+  --color-dinteractive: rgb(107 92 11);
 }
 
 :root {
@@ -29,7 +37,20 @@
   --color5: 183, 21, 212;
   --circle-size: 80%;
   --interactive: 212, 183, 21;
+
   --blending: hard-light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color1: 107, 11, 25;
+    --color2: 73, 107, 11;
+    --color3: 107, 11, 73;
+    --color4: 107, 44, 11;
+    --color5: 92, 11, 107;
+    --interactive: 107, 92, 11;
+    color-scheme: dark;
+  }
 }
 
 @keyframes moveInCircle {
@@ -127,7 +148,7 @@
   }
 
   .gradient-bg{
-      @apply absolute inset-0 w-full h-full overflow-hidden bg-linear-to-r from-b-gradient1 to-b-gradient2 z-0;
+      @apply absolute inset-0 w-full h-full overflow-hidden bg-linear-to-r from-b-gradient1 dark:from-bd-gradient1 to-b-gradient2 dark:to-bd-gradient2 z-0;
   }
 
   svg{
