@@ -40,7 +40,7 @@ const projects = [
         link: "/projects/breakoutGame"
     },
     {
-        title: "Richard Siken Quote Generator*In progress",
+        title: "Richard Siken Quote Generator",
         description: "A program that randomly generates a quote from the works or \"Crush\" and \"War Of The Foxes\" by Richard Siken and " +
             "displays it along with the name of the poem and the work it's from.",
         image: "/project-thumbnails/siken-quote-generator-thumbnail.png",
