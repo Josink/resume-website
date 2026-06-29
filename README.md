@@ -1,1 +1,1 @@
-https://resume-website-dun-nine.vercel.app/
+https://jay-sinkaiye-personal-portforlio-nine.vercel.app/
