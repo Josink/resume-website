@@ -5,28 +5,14 @@
   --color-highlight: #D4B715;
   --color-b-gradient1: #15D4B8;
   --color-b-gradient2: #5815D4;
-  --color-bd-gradient1: #0B6B5C;
-  --color-bd-gradient2: #2C0B6B;
+  --color-bd-gradient1: #0c8e79;
+  --color-bd-gradient2: #350d8a;
   --color-secondary-text: #DEDEDE;
   --color-tertiary-text: #B8B6B6;
 
   --color-light-background: #FFFFFF;
   --color-light-secondary-text: #8c8c8c;
   --color-light-tertiary-text: #000000;
-
-  --color-color1: rgb(212, 21, 50);
-  --color-color2: rgb(145, 212, 21);
-  --color-color3: rgb(212, 21, 145);
-  --color-color4: rgb(212, 88, 21);
-  --color-color5: rgb(183, 21, 212);
-  --color-interactive: rgb(212, 183, 21);
-
-  --color-dcolor1: rgb(107 11 25);
-  --color-dcolor2: rgb(73 107 11);
-  --color-dcolor3: rgb(107 11 73);
-  --color-dcolor4: rgb(107 44 11);
-  --color-dcolor5: rgb(92 11 107);
-  --color-dinteractive: rgb(107 92 11);
 }
 
 :root {
@@ -39,18 +25,6 @@
   --interactive: 212, 183, 21;
 
   --blending: hard-light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color1: 107, 11, 25;
-    --color2: 73, 107, 11;
-    --color3: 107, 11, 73;
-    --color4: 107, 44, 11;
-    --color5: 92, 11, 107;
-    --interactive: 107, 92, 11;
-    color-scheme: dark;
-  }
 }
 
 @keyframes moveInCircle {
@@ -105,7 +79,7 @@
     @apply fixed top-6 left-1/2 -translate-x-1/2 w-fit z-50
     px-8 py-3 rounded-2xl
     backdrop-blur-md bg-white/5
-    border border-white/10 shadow-lg;
+    border border-black/10 dark:border-white/10 shadow-lg;
   }
 
   .nav {
@@ -148,7 +122,7 @@
   }
 
   .gradient-bg{
-      @apply absolute inset-0 w-full h-full overflow-hidden bg-linear-to-r from-b-gradient1 dark:from-bd-gradient1 to-b-gradient2 dark:to-bd-gradient2 z-0;
+      @apply absolute inset-0 w-full h-full overflow-hidden bg-linear-to-r from-b-gradient1  to-b-gradient2 z-0;
   }
 
   svg{
@@ -287,7 +261,7 @@
   }
 
   .personal-info{
-    @apply mb-75 max-w-4xl w-full py-6 px-6 rounded-2xl border border-white/10;
+    @apply mb-75 max-w-4xl w-full py-6 px-6 rounded-2xl border border-black/10 dark:border-white/10 shadow-lg;
   }
 
   .personal-info-intro{
@@ -304,7 +278,7 @@
 
   .education{
     @apply mb-75 max-w-2xl w-full px-8 py-6
-    rounded-2xl border border-white/10 shadow-lg;
+    rounded-2xl border border-black/10 dark:border-white/10 shadow-lg;
   }
 
   .details{
@@ -344,7 +318,7 @@
   }
 
   .card {
-    @apply rounded-2xl border border-white/10 shadow-lg
+    @apply rounded-2xl border border-black/10 dark:border-white/10 shadow-lg
     mt-6 px-8 py-6;
   }
 
@@ -381,7 +355,7 @@
   }
 
   .project-overlay{
-    @apply absolute inset-0 bg-black/70 text-white p-4
+    @apply absolute inset-0 bg-white/70 dark:bg-black/70 text-white p-4
     flex flex-col justify-end opacity-0 transition duration-300;
   }
 
@@ -446,7 +420,7 @@
   }
 
   .project-page{
-    @apply min-h-screen min-w-screen flex flex-col sm:flex-row items-center p-20 gap-20;
+    @apply min-h-screen min-w-screen flex flex-col sm:flex-row items-center p-20 gap-16;
   }
 
   .deliverable{
