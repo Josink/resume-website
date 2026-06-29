@@ -261,7 +261,7 @@
   }
 
   .personal-info{
-    @apply max-w-4xl w-full py-6 px-6 rounded-2xl border border-black/10 dark:border-white/10 shadow-lg;
+    @apply max-w-4xl w-full py-6 px-6 h-full rounded-2xl border border-black/10 dark:border-white/10 shadow-lg;
   }
 
   .personal-info-intro{
