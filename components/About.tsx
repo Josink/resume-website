@@ -16,33 +16,33 @@ export default function Education() {
         <section id = "about" className = "about">
             <div className = "personal-info">
                 <h1 className = "personal-info-intro">
-                    I&#39;m a college student attending Kettering University with a major in Computer Science,
-                    a concentration in Computer Gaming, and a minor in Computer Engineering. I&#39;m highly
-                    adaptable and self-motivated and look forward to roles that allow me to show-case creativity.
-                    I&#39;m currently looking for internship/co-op roles in any computer-science related fields,
-                    especially any that lie in UI and Web development/design or Game development.
+                    I&#39;m a Computer Science student at Kettering University with a passion
+                    for creating software that is both functional and engaging. My interests span
+                    software engineering, web development, game development, robotics, and embedded
+                    systems, and I enjoy tackling projects that combine creativity with technical
+                    problem-solving.
                 </h1>
 
                 <h3 className = "personal-info-text">
                     <p>
-                        I was dual-enrolled at the University of Michigan-Flint during high school, so although
-                        this is my freshman year in college, I&#39;m a sophomore by credit. During High School,
-                        I was the captain of the programming/electrical subteam on my FIRST Robotics team.
-                        I was also student president in my senior year, treasurer for Key club, a volunteer-based club,
-                        and secretary for NHS. I was a member of my High School E-sports club and a student mentor.
-                        I also volunteered as a teaching assistant for my High School science teacher for over 300 hours.
-                        During High School, I was also enrolled in the Genesee Career Institute where I learned how to weld and
-                        specialized in aluminum/stainless steel TIG welding.
+                        Through my experiences as a Controls Engineering Co-op at Atlas Copco, an IT Student Worker,
+                        and a Unity game development intern, I&#39;ve gained hands-on experience with software testing,
+                        debugging, version control, Agile development, and technical support while working on real-world
+                        engineering projects. Outside of the classroom, I&#39;ve continued to develop my leadership skills
+                        by mentoring FIRST Robotics teams and serving as captain of my high school&#39;s programming and
+                        electrical robotics team.
                     </p>
 
                     <p>
-                        During college, I became a member of my university&#39;s chapter of the National Society for
-                        Black engineers, the Black Student&#39;s Union, and Volleyball club. I work on campus for our
-                        IT department and Robotics center. In my free time, I also volunteer as a mentor for my previous
-                        High School&#39;s Robotics club. My hobbies are reading, playing video games, creating video games,
-                        web development, baking, and playing the violin. I&#39;m familiar with applications such as Unity,
-                        Onshape, Git, Sourcetree, Microsoft Office, Google Suite, and Jira. I&#39;m experienced with Java,
-                        C#, C++, Next.js/React, CSS, HTML. I&#39;m also skilled at writing and executing Test Plans.
+                        I enjoy building applications that make an impact—from responsive web applications and
+                        interactive games to robotics software and automation tools. My technical toolkit
+                        includes Java, C++, C#, JavaScript, HTML, CSS, React/Next.js, Git, Unity, and Jira,
+                        and I&#39;m always looking for opportunities to learn new technologies and expand my skills.
+                    </p>
+
+                    <p>When I&#39;m not coding, you&#39;ll probably find me mentoring robotics students, reading, baking,
+                        playing volleyball, or working on personal software projects. I&#39;m always excited to connect
+                        with others who share a passion for technology and innovation.
                     </p>
                 </h3>
             </div>
