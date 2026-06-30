@@ -29,8 +29,7 @@ export default function Education() {
                         and a Unity game development intern, I&#39;ve gained hands-on experience with software testing,
                         debugging, version control, Agile development, and technical support while working on real-world
                         engineering projects. Outside of the classroom, I&#39;ve continued to develop my leadership skills
-                        by mentoring FIRST Robotics teams and serving as captain of my high school&#39;s programming and
-                        electrical robotics team.
+                        by mentoring a FIRST Robotics team.
                     </p>
 
                     <p>
