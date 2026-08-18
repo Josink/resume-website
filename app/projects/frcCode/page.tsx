@@ -4,6 +4,10 @@ export default function frcCode() {
     return(
         <section id = "project-page" className = "project-page">
             <div className = "deliverable">
+                <div className = "project-title">
+                    <p>Team TESLA 2025 Competition Robot | Java, WPILib, Phoenix 6, PathPlanner, Limelight</p>
+                </div>
+
                 <Image
                     src="/project-thumbnails/frc-2025-code-thumbnail.png"
                     alt="3D CAD model of Team TESLA (FRC Team 4998)'s 2025 competition robot. The robot features a red bumper,
@@ -22,7 +26,8 @@ export default function frcCode() {
 
             <div className="projects-description">
                 <p>
-                    This is the code for Team TESLA(4998)&#39;s 2025 robot. I was the lead programmer on the team and wrote this solely. This program uses Java and uses an object-oriented framework. This program allows the operator to control the robot with input from a console controller and to also move autonomously. I implemented path-planning and vision software in this project, and retrieved data from sensors on the robot and used it to adjust the robot&#39;s position or actions.                </p>
+                    Led software development for Team TESLA (FRC 4998)&#39;s 2025 competition robot, developing the robot control system in Java using WPILib and an object-oriented architecture. Implemented teleoperated and autonomous functionality, including swerve-drive control, PathPlanner autonomous routines, and vision-based localization using Limelight. Integrated sensor data to dynamically adjust robot positioning and behavior, and developed software for coordinating multiple robot subsystems and mechanisms.
+                </p>
             </div>
 
         </section>

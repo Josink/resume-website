@@ -424,7 +424,7 @@
   }
 
   .deliverable{
-    @apply flex flex-col gap-20 justify-center items-center w-3/4 sm:min-h-screen;
+    @apply flex flex-col gap-20 justify-center items-center w-1/2 sm:min-h-screen;
   }
 
   .projects-image{
@@ -440,10 +440,18 @@
   }
 
   .projects-description {
-    @apply text-lg w-3/4 sm:w-1/4;
+    @apply text-lg w-1/2 sm:w-3/4;
   }
 
   .projects-links a{
     @apply text-lg text-light-secondary-text dark:text-secondary-text hover:text-highlight transition duration-200;
+  }
+
+  .project-bullets {
+    @apply list-disc list-outside pl-6;
+  }
+
+  .project-title {
+    @apply text-3xl font-semibold mb-6 text-black dark:text-white;
   }
 }

@@ -2,47 +2,53 @@ import Link from 'next/link';
 
 const projects = [
     {
-        title: "FIRST Robotics 2025 Season Robot Code(Team 4998)",
-        description: "This is the code for Team TESLA(4998)'s 2025 robot. I was the lead programmer on the team and wrote this solely. " +
-            "This program uses Java and uses an object-oriented framework. This program allows the operator to control the robot with input " +
-            "from a console controller and to also move autonomously. I implemented path-planning and vision software in this project, and " +
-            "retrieved data from sensors on the robot and used it to adjust the robot's position or actions.",
-        image: "/project-thumbnails/frc-2025-code-thumbnail.png",
+        title: "Team TESLA 2025 Competition Robot | Java, WPILib, Phoenix 6, PathPlanner, Limelight",
+        description: "Led software development for Team TESLA (FRC 4998)'s 2025 competition robot," +
+            "developing the robot control system in Java using WPILib and an object-oriented " +
+            "architecture. Implemented teleoperated and autonomous functionality, including " +
+            "swerve-drive control, PathPlanner autonomous routines, and vision-based " +
+            "localization using Limelight. Integrated sensor data to dynamically adjust " +
+            "robot positioning and behavior, and developed software for coordinating multiple " +
+            "robot subsystems and mechanisms.",
         link: "/projects/frcCode"
     },
     {
-        title:"Weather App",
-        description: "This is a program that takes in the name of a city and returns weather conditions in the city. This program uses HTML, CSS, " +
-            "and JavaScript. It also uses data from an open-source weather API called Open-Meteo.",
-        image: "/project-thumbnails/weather-app-thumbnail.png",
+        title:"Weather App | HTML, CSS, JavaScript, Open-Meteo API",
+        description: "Developed a responsive weather web application using HTML, CSS, and vanilla JavaScript that allows users to search for cities and retrieve real-time weather conditions.\n" +
+            "Integrated the Open-Meteo API to asynchronously retrieve and process weather data, dynamically updating the user interface based on API responses.\n" +
+            "Implemented interactive user input and DOM manipulation to display location-specific weather information in a user-friendly interface.",
         link: "/projects/weatherApp"
     },
     {
-        title: "Waterdrop Game",
-        description: "A simple slider game that uses LibGDX which is cross-platform Java game development framework based on OpenGL. " +
-            "It can be controlled using the arrow keys on the keyboard or touchscreen. This program uses Java.",
-        image: "/project-thumbnails/waterdrop-game-thumbnail.png",
+        title: "Drop — Slider Game | Java, libGDX, OpenGL",
+        description: "Developed a cross-platform 2D slider game in Java using the libGDX game development framework and OpenGL.\n" +
+            "Implemented keyboard and touchscreen input handling, allowing players to interact with the game across desktop and mobile platforms.\n" +
+            "Structured the project using libGDX's modular architecture and Gradle build system to support desktop, Android, and web platforms.",
         link: "/projects/waterdropGame"
     },
     {
-        title: "Computer Science Algorithms Website",
-        description: "An extra credit assignment for my CS 203-Computing and Algorithms III class. This is a website that provides information " +
-            "about the most common sorting and searching algorithms used in the computer science field and allows the user to create an account and " +
-            "run instances of the algorithms. The website saves all data from the previously ran instances in a dashboard available to the user. " +
-            "*Takes a while to load*",
+        title: "Algorithm Analysis Website | JavaScript, Node.js, Express, EJS, HTML, CSS",
+        description: "Developed a full-stack web application for exploring and executing common sorting and searching algorithms, including Binary Search, Merge Sort, Quick Sort, Heap Sort, and others.\n" +
+            "Implemented user account functionality and a personalized dashboard that allows users to configure algorithm runs, execute instances, and access their previous results.\n" +
+            "Built dynamic server-rendered pages using EJS and integrated frontend forms with backend routes to process algorithm execution requests and persist user activity.\n" +
+            "Designed an interactive interface for selecting algorithms and configuring test inputs, providing users with a practical way to explore algorithm behavior and performance.",
         image: "/project-thumbnails/algorithms-website-thumbnail.png",
         link: "/projects/algorithmsWebsite"
     },
     {
-        title: "Break-Out Game",
-        description: "A simple game using LIBGDX framework that features a paddle, balls, and breakout tiles that need to be destroyed.",
-        image: "/project-thumbnails/breakout-game-thumbnail.png",
+        title: "BreakAway Game | Java, libGDX, OpenGL",
+        description: "Developed a 2D Breakout-style game in Java using the libGDX cross-platform game development framework and OpenGL.\n" +
+            "Implemented core gameplay mechanics, player input, object movement, and collision-based interactions to create a responsive game experience.\n" +
+            "Added keyboard and touchscreen controls to support gameplay across desktop and mobile platforms.\n" +
+            "Utilized libGDX's modular architecture and Gradle build system to organize dependencies and support cross-platform development.",
         link: "/projects/breakoutGame"
     },
     {
-        title: "Richard Siken Quote Generator",
-        description: "A program that randomly generates a quote from the works or \"Crush\" and \"War Of The Foxes\" by Richard Siken and " +
-            "displays it along with the name of the poem and the work it's from.",
+        title: "Richard Siken Quote Generator | Next.js, React, JavaScript, JSON, PDF Parsing",
+        description: "Developed a Next.js/React web application that generates random quotes from Richard Siken's Crush and War of the Foxes based on sentence-level text parsing.\n" +
+            "Built a data-processing script to extract and parse poem text from PDF documents, identify complete sentences, and convert the processed data into structured JSON for use by the application.\n" +
+            "Implemented interactive features allowing users to generate new quotes, copy quotes directly to their clipboard, and share quotes to Tumblr and X.\n" +
+            "Designed the application to dynamically retrieve and display quote data through a responsive React interface.",
         image: "/project-thumbnails/siken-quote-generator-thumbnail.png",
         link: "/projects/quoteGenerator"
     }

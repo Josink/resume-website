@@ -4,10 +4,14 @@ export default function weatherApp() {
     return(
         <section id = "project-page" className = "project-page">
             <div className = "deliverable">
+                <div className = "project-title">
+                    <p>Weather App | HTML, CSS, JavaScript, Open-Meteo API</p>
+                </div>
+
                 <a href="https://jaycityweather.netlify.app/" target="_blank">
                     <Image
                         src="/project-thumbnails/weather-app-thumbnail.png"
-                        alt="Image of the Richard Siken Quote Generator Website"
+                        alt="Image of the Weather App Website"
                         width = {500}
                         height = {500}
                         className = "projects-image"
@@ -21,9 +25,17 @@ export default function weatherApp() {
             </div>
 
             <div className="projects-description">
-                <p>
-                    This is a program that takes in the name of a city and returns weather conditions in the city. This program uses HTML, CSS, and JavaScript. It also uses data from an open-source weather API called Open-Meteo.
-                </p>
+                <ul className="project-bullets">
+                    <li>Developed a responsive weather web application using HTML, CSS, and vanilla JavaScript that
+                        allows users to search for cities and retrieve real-time weather conditions.
+                    </li>
+                    <li>Integrated the Open-Meteo API to asynchronously retrieve and process weather data, dynamically
+                        updating the user interface based on API responses.
+                    </li>
+                    <li>Implemented interactive user input and DOM manipulation to display location-specific weather
+                        information in a user-friendly interface.
+                    </li>
+                </ul>
             </div>
 
         </section>

@@ -4,6 +4,10 @@ export default function breakoutGame() {
     return(
         <section id = "project-page" className = "project-page">
             <div className = "deliverable">
+                <div className = "project-title">
+                    <p>BreakAway Game | Java, libGDX, OpenGL</p>
+                </div>
+
                 <a href="https://breakoutgamelibdgx.netlify.app/" target="_blank">
                     <Image
                         src="/project-thumbnails/breakout-game-thumbnail.png"
@@ -21,8 +25,19 @@ export default function breakoutGame() {
             </div>
 
             <div className="projects-description">
-                <p>
-                    A simple slider game that uses LibGDX which is cross-platform Java game development framework based on OpenGL. It can be controlled using the arrow keys on the keyboard or touchscreen. This program uses Java.                </p>
+                <ul className="project-bullets">
+                    <li>Developed a 2D Breakout-style game in Java using the libGDX cross-platform game development
+                        framework and OpenGL.
+                    </li>
+                    <li>Implemented core gameplay mechanics, player input, object movement, and collision-based
+                        interactions to create a responsive game experience.
+                    </li>
+                    <li>Added keyboard and touchscreen controls to support gameplay across desktop and mobile
+                        platforms.
+                    </li>
+                    <li>Utilized libGDX&#39;s modular architecture and Gradle build system to organize dependencies and
+                        support cross-platform development. </li>
+                </ul>
             </div>
 
         </section>

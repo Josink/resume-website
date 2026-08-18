@@ -3,6 +3,10 @@ import Image from "next/image";
 export default function algorithmsWebsite() {
     return(
         <section id = "project-page" className = "project-page">
+            <div className = "project-title">
+                <p>Algorithm Analysis Website | JavaScript, Node.js, Express, EJS, HTML, CSS</p>
+            </div>
+
             <div className = "deliverable">
                 <a href="https://sinkaiye-cs203-f25-g6-project2-website.onrender.com/" target="_blank">
                     <Image
@@ -21,8 +25,20 @@ export default function algorithmsWebsite() {
             </div>
 
             <div className="projects-description">
-                <p>
-                    An extra credit assignment for my CS 203-Computing and Algorithms III class. This is a website that provides information about the most common sorting and searching algorithms used in the computer science field and allows the user to create an account and run instances of the algorithms. The website saves all data from the previously ran instances in a dashboard available to the user. *Takes a while to load*                </p>
+                <ul className="project-bullets">
+                    <li>Developed a full-stack web application for exploring and executing common sorting and searching
+                        algorithms, including Binary Search, Merge Sort, Quick Sort, Heap Sort, and others.
+                    </li>
+                    <li>Implemented user account functionality and a personalized dashboard that allows users to
+                        configure algorithm runs, execute instances, and access their previous results.
+                    </li>
+                    <li>Built dynamic server-rendered pages using EJS and integrated frontend forms with backend routes
+                        to process algorithm execution requests and persist user activity.
+                    </li>
+                    <li>Designed an interactive interface for selecting algorithms and configuring test inputs, providing
+                        users with a practical way to explore algorithm behavior and performance.
+                    </li>
+                </ul>
             </div>
 
         </section>

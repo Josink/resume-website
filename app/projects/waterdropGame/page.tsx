@@ -21,8 +21,16 @@ export default function waterdropGame() {
             </div>
 
             <div className="projects-description">
-                <p>
-                    A simple slider game that uses LibGDX which is cross-platform Java game development framework based on OpenGL. It can be controlled using the arrow keys on the keyboard or touchscreen. This program uses Java.                </p>
+                <ul className="project-bullets">
+                    <li>Developed a cross-platform 2D slider game in Java using the libGDX game development framework and
+                        OpenGL.
+                    </li>
+                    <li>Implemented keyboard and touchscreen input handling, allowing players to interact with the game
+                        across desktop and mobile platforms.
+                    </li>
+                    <li>Structured the project using libGDX&#39;s modular architecture and Gradle build system to support
+                        desktop, Android, and web platforms. </li>
+                </ul>
             </div>
         </section>
     );
