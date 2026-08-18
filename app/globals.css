@@ -444,7 +444,7 @@
   }
 
   .projects-description {
-    @apply text-lg w-1/2 sm:w-3/4;
+    @apply text-lg w-3/4 sm:w-1/2;
   }
 
   .projects-links a{
