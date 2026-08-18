@@ -3,7 +3,7 @@ const experiences = [
         location: "Kettering University, Flint, MI",
         time: "April 2026 - present",
         title: "IT student Worker",
-        description: "Provide frontline technical support to students, faculty, and staff by troubleshooting hardware, software, " +
+        description: "Provided frontline technical support to students, faculty, and staff by troubleshooting hardware, software, " +
             "and network issues, installing and configuring systems, and assisting with campus IT services and equipment maintenance"
     },
     {
@@ -17,13 +17,13 @@ const experiences = [
     {
         location: "Kettering University, Flint, MI",
         time: "Nov 2025 - present",
-        title: "FIRST Robotics center assistant",
+        title: "FIRST Robotics Center Assistant",
         description: "Set up and monitor robotic competitions, assist teams with equipment, and monitor teams while in center"
     },
     {
         location: "Genesee Early College, Flint, MI",
         time: "August 2022 - May 2025",
-        title: "Science teacher's assistant",
+        title: "Science Teacher's Assistant",
         description: "Volunteered to help with setting up labs, monitoring tests, and tutoring students for over 400 hours during high school."
     },
     {
@@ -35,7 +35,7 @@ const experiences = [
     {
         location: "Kettering University, Flint, MI",
         time: "June 2024 - August 2024",
-        title: "Summer camp assistant",
+        title: "Summer Camp Assistant",
         description: "Taught students about basics of programming a robot in Java during the Robotic summer camps Kettering hosted"
     }
 ]

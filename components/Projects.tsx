@@ -10,6 +10,7 @@ const projects = [
             "localization using Limelight. Integrated sensor data to dynamically adjust " +
             "robot positioning and behavior, and developed software for coordinating multiple " +
             "robot subsystems and mechanisms.",
+        image: "/project-thumbnails/frc-2025-code-thumbnail.png",
         link: "/projects/frcCode"
     },
     {
@@ -17,6 +18,7 @@ const projects = [
         description: "Developed a responsive weather web application using HTML, CSS, and vanilla JavaScript that allows users to search for cities and retrieve real-time weather conditions.\n" +
             "Integrated the Open-Meteo API to asynchronously retrieve and process weather data, dynamically updating the user interface based on API responses.\n" +
             "Implemented interactive user input and DOM manipulation to display location-specific weather information in a user-friendly interface.",
+        image: "/project-thumbnails/weather-app-thumbnail.png",
         link: "/projects/weatherApp"
     },
     {
@@ -24,6 +26,7 @@ const projects = [
         description: "Developed a cross-platform 2D slider game in Java using the libGDX game development framework and OpenGL.\n" +
             "Implemented keyboard and touchscreen input handling, allowing players to interact with the game across desktop and mobile platforms.\n" +
             "Structured the project using libGDX's modular architecture and Gradle build system to support desktop, Android, and web platforms.",
+        image: "/project-thumbnails/waterdrop-game-thumbnail.png",
         link: "/projects/waterdropGame"
     },
     {
@@ -41,6 +44,7 @@ const projects = [
             "Implemented core gameplay mechanics, player input, object movement, and collision-based interactions to create a responsive game experience.\n" +
             "Added keyboard and touchscreen controls to support gameplay across desktop and mobile platforms.\n" +
             "Utilized libGDX's modular architecture and Gradle build system to organize dependencies and support cross-platform development.",
+        image: "/project-thumbnails/breakout-game-thumbnail.png",
         link: "/projects/breakoutGame"
     },
     {

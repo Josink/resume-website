@@ -3,11 +3,13 @@ import Image from "next/image";
 export default function algorithmsWebsite() {
     return(
         <section id = "project-page" className = "project-page">
+            <div className = "project-title">
+                <p>Algorithm Analysis Website | JavaScript, Node.js, Express, EJS, HTML, CSS</p>
+            </div>
+
             <div className = "project-body">
                 <div className="deliverable">
-                    <div className = "project-title">
-                        <p>Algorithm Analysis Website | JavaScript, Node.js, Express, EJS, HTML, CSS</p>
-                    </div>
+
                     <a href="https://sinkaiye-cs203-f25-g6-project2-website.onrender.com/" target="_blank">
                         <Image
                             src="/project-thumbnails/algorithms-website-thumbnail.png"
@@ -18,11 +20,6 @@ export default function algorithmsWebsite() {
                         />
                     </a>
 
-                    <div className="projects-links">
-                        <Image src="/Icons/github.svg" alt="GitHub" className="contact-icon" width={500} height={500}/>
-                        <a href="https://github.com/Josink/Sinkaiye-CS203-F25-G6-Project2-Website/blob/master/views/dashboard.ejs"
-                           target="_blank">GitHub</a>
-                    </div>
                 </div>
 
                 <div className="projects-description">
@@ -44,6 +41,12 @@ export default function algorithmsWebsite() {
                         </li>
                     </ul>
                 </div>
+            </div>
+
+            <div className="projects-links">
+                <Image src="/Icons/github.svg" alt="GitHub" className="contact-icon" width={500} height={500}/>
+                <a href="https://github.com/Josink/Sinkaiye-CS203-F25-G6-Project2-Website/blob/master/views/dashboard.ejs"
+                   target="_blank">GitHub</a>
             </div>
 
         </section>

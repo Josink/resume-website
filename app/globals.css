@@ -420,11 +420,15 @@
   }
 
   .project-page{
-    @apply min-h-screen min-w-screen flex flex-col sm:flex-row items-center p-20 gap-16;
+    @apply min-h-screen w-full flex flex-col items-center p-20 gap-16;
+  }
+
+  .project-body{
+    @apply flex flex-col sm:flex-row items-center gap-16;
   }
 
   .deliverable{
-    @apply flex flex-col gap-20 justify-center items-center w-1/2 sm:min-h-screen;
+    @apply flex justify-center items-center w-1/2;
   }
 
   .projects-image{
@@ -436,7 +440,7 @@
   }
 
   .projects-links{
-    @apply flex flex-row justify-center items-center gap-3;
+    @apply flex flex-row justify-center items-center gap-3 mt-6;
   }
 
   .projects-description {
@@ -454,4 +458,5 @@
   .project-title {
     @apply text-3xl font-semibold mb-6 text-black dark:text-white;
   }
+
 }
