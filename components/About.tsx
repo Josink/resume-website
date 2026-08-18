@@ -11,6 +11,24 @@ const about = [
     }
 ]
 
+const ext = [
+    {
+        location: "Genesee Early College",
+        description: "Mentor of local FIRST Robotics team(#4998)",
+        time: "January 2026 - Present"
+    },
+    {
+        location: "Kettering University",
+        description: "Member of the National Society of Black Engineers (NSBE)",
+        time: "October 2025 - Present"
+    },
+    {
+        location: "Kettering University",
+        description: "Member of the Black Student Union (BSU)",
+        time: "October 2025 - Present"
+    }
+]
+
 export default function Education() {
     return (
         <section id = "about" className = "about">
@@ -46,6 +64,8 @@ export default function Education() {
                 </h3>
             </div>
 
+            <div className = "skill"></div>
+
             <div className = "education">
                 <h1 className = "education-title">Education</h1>
                 {about.map((about, i) => (
@@ -58,6 +78,20 @@ export default function Education() {
                     </div>
                 ))}
             </div>
+
+            <div className = "extracurriculars">
+                <h1 className = "extracurricular-title">Extracurriculars</h1>
+                {ext.map((ext, i) => (
+                    <div key = {i} className = "edu">
+                        <div className = "details">
+                            <h1 className ="location">{ext.location}</h1>
+                            <h1 className = "time">{ext.time}</h1>
+                        </div>
+                        <h1 className = "description">{ext.description}</h1>
+                    </div>
+                ))}
+            </div>
+
         </section>
     );
 }
