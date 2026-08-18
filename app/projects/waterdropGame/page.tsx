@@ -4,6 +4,10 @@ export default function waterdropGame() {
     return(
         <section id = "project-page" className = "project-page">
             <div className = "deliverable">
+                <div className = "project-title">
+                    <p>Drop — Slider Game | Java, libGDX, OpenGL</p>
+                </div>
+
                 <a href="https://waterdropgame.netlify.app/" target="_blank">
                     <Image
                         src="/project-thumbnails/waterdrop-game-thumbnail.png"
