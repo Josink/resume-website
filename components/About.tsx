@@ -64,32 +64,32 @@ export default function Education() {
                 </h3>
             </div>
 
-            <div className = "skill"></div>
-
-            <div className = "education">
-                <h1 className = "education-title">Education</h1>
-                {about.map((about, i) => (
-                    <div key = {i} className = "edu">
-                        <div className = "details">
-                            <h1 className ="school">{about.school}</h1>
-                            <h1 className = "time">{about.time}</h1>
+            <div className = "edetails">
+                <div className="education">
+                    <h1 className="education-title">Education</h1>
+                    {about.map((about, i) => (
+                        <div key={i} className="edu">
+                            <div className="details">
+                                <h1 className="school">{about.school}</h1>
+                                <h1 className="time">{about.time}</h1>
+                            </div>
+                            <h1 className="description">{about.description}</h1>
                         </div>
-                        <h1 className = "description">{about.description}</h1>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
 
-            <div className = "extracurriculars">
-                <h1 className = "extracurricular-title">Extracurriculars</h1>
-                {ext.map((ext, i) => (
-                    <div key = {i} className = "edu">
-                        <div className = "details">
-                            <h1 className ="location">{ext.location}</h1>
-                            <h1 className = "time">{ext.time}</h1>
+                <div className="extracurriculars">
+                    <h1 className="extracurricular-title">Extracurriculars</h1>
+                    {ext.map((ext, i) => (
+                        <div key={i} className="edu">
+                            <div className="details">
+                                <h1 className="location">{ext.location}</h1>
+                                <h1 className="time">{ext.time}</h1>
+                            </div>
+                            <h1 className="description">{ext.description}</h1>
                         </div>
-                        <h1 className = "description">{ext.description}</h1>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
 
         </section>

@@ -257,11 +257,11 @@
   }
 
   .about{
-    @apply min-h-screen flex flex-col sm:flex-row justify-center items-center sm:items-end gap-16 md:px-20;
+    @apply min-h-screen flex flex-col sm:flex-row justify-center items-center gap-16 md:px-20;
   }
 
   .personal-info{
-    @apply max-w-4xl w-full py-6 px-6 h-full rounded-2xl border border-black/10 dark:border-white/10 shadow-lg;
+    @apply max-w-4xl w-4/6 px-8 py-6 min-h-full rounded-2xl border border-black/10 dark:border-white/10 shadow-lg;
   }
 
   .personal-info-intro{
@@ -276,7 +276,16 @@
     @apply mb-3 mt-3;
   }
 
+  .edetails{
+    @apply gap-16;
+  }
+
   .education{
+    @apply max-w-2xl w-full px-8 py-6
+    rounded-2xl border border-black/10 dark:border-white/10 shadow-lg;
+  }
+
+  .extracurriculars{
     @apply max-w-2xl w-full px-8 py-6
     rounded-2xl border border-black/10 dark:border-white/10 shadow-lg;
   }
@@ -286,6 +295,10 @@
   }
 
   .education-title{
+    @apply font-semibold text-xl text-black dark:text-white;
+  }
+
+  .extracurricular-title{
     @apply font-semibold text-xl text-black dark:text-white;
   }
 
