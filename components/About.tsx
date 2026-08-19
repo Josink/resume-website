@@ -70,8 +70,8 @@ export default function Education() {
                     {about.map((about, i) => (
                         <div key={i} className="edu">
                             <div className="details">
-                                <h1 className="school">{about.school}</h1>
-                                <h1 className="time">{about.time}</h1>
+                                <h6 className="school">{about.school}</h6>
+                                <h6 className="time">{about.time}</h6>
                             </div>
                             <h1 className="description">{about.description}</h1>
                         </div>
