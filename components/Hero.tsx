@@ -63,9 +63,9 @@ export default function Hero() {
             </div>
 
             <div className= "hero-text">
-                <h1 className = "hero-greeting">
+                <p className = "hero-greeting">
                     Hello, <br /> I&#39;m Jay
-                </h1>
+                </p>
             </div>
 
         </section>

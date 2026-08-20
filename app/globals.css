@@ -75,6 +75,26 @@
     scroll-behavior: smooth;
   }
 
+  h1{
+    @apply text-2xl;
+  }
+
+  .h2{
+    @apply text-xl;
+  }
+
+  h3{
+    @apply text-lg;
+  }
+
+  h4{
+    @apply text-base
+  }
+
+  h5{
+    @apply text-sm;
+  }
+
   .nav-wrapper {
     @apply fixed top-6 left-1/2 -translate-x-1/2 w-fit z-50
     px-8 py-3 rounded-2xl
@@ -257,7 +277,7 @@
   }
 
   .about{
-    @apply min-h-full flex flex-col sm:flex-row justify-center items-stretch gap-16 md:px-20;
+    @apply min-h-full flex flex-1 flex-col sm:flex-row justify-center items-stretch gap-16 md:px-20;
   }
 
   .personal-info{
@@ -265,15 +285,11 @@
   }
 
   .personal-info-intro{
-    @apply font-medium text-lg leading-relaxed text-black dark:text-white;
+    @apply font-medium leading-relaxed text-black dark:text-white mb-5;
   }
 
   .personal-info-text{
-    @apply text-light-secondary-text dark:text-secondary-text;
-  }
-
-  .personal-info-text p{
-    @apply mb-3 mt-3;
+    @apply text-light-secondary-text dark:text-secondary-text flex flex-col gap-5;
   }
 
   .edetails{

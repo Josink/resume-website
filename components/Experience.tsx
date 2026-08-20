@@ -42,7 +42,7 @@ const experiences = [
 export default function Experience() {
     return (
         <section id = "experience" className = "experience">
-            <h2 className = "experience-title">Experience</h2>
+            <h1 className = "experience-title">Experience</h1>
 
             <div className="experiences">
                 {experiences.map((experience, i) => (
@@ -50,11 +50,11 @@ export default function Experience() {
                         key={i}
                         className="card">
                         <div className = "details">
-                            <h3 className="card-title">{experience.title}</h3>
-                            <p className="time">{experience.time}</p>
+                            <h2 className="card-title">{experience.title}</h2>
+                            <h5 className="time">{experience.time}</h5>
                         </div>
-                        <p className="location">{experience.location}</p>
-                        <p className="description">{experience.description}</p>
+                        <h3 className="location">{experience.location}</h3>
+                        <h4 className="description">{experience.description}</h4>
                     </div>
                 ))}
             </div>
